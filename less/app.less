@@ -1,0 +1,47 @@
+@base: #42bfb4;
+@font-color: #16403c;
+@import url(http://fonts.googleapis.com/css?family=UnifrakturCook:700);
+
+
+body{
+  background-color: @base;
+}
+
+h1 {
+  font-family: 'UnifrakturCook', cursive;
+  color: @font-color;
+  text-align: center;
+}
+
+#board {
+  width: 580px;
+  height: 580px;
+}
+
+.square {
+  float: left;
+  border: 1px solid white;
+
+}
+
+.startSquare, .endSquare {
+  text-align: center;
+}
+
+.currentPosition {
+  background: url('http://i261.photobucket.com/albums/ii55/mekychan/bth_Autobots.png') no-repeat center;
+  background-size: contain;
+}
+
+.ghost {
+  background: url('http://farm1.staticflickr.com/188/436860948_fdc4a67e36_o.png') no-repeat center;
+  background-size: contain;
+}
+
+.availableMove {
+  background-color: red;
+}
+
+#messages {
+  list-style: none;
+}
